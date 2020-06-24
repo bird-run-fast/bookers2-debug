@@ -39,6 +39,9 @@
 						<td><%= link_to '', book_favorites_path(book.id), method: :post, class: "glyphicon glyphicon-heart color-black" %> <%= book.favorites.count %></td>
 					<% end %>
 
+					<td>
+						コメント数:<%= book.book_comments.count%>
+					</td>
 				</tr>
 				<% end %>
 			</tbody>
